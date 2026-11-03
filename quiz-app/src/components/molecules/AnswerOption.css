@@ -1,0 +1,38 @@
+.answer-option {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    cursor: pointer;
+}
+
+.answer-option:not(.answer-option--disabled):hover {
+    border-color: var(--color-primary);
+    background: var(--color-primary-soft);
+}
+
+.answer-option__input {
+    accent-color: var(--color-primary);
+}
+
+.answer-option--selected {
+    border-color: var(--color-primary);
+    background: var(--color-primary-soft);
+}
+
+.answer-option--correct {
+    border-color: var(--color-success);
+    background: var(--color-success-soft);
+}
+
+.answer-option--wrong {
+    border-color: var(--color-danger);
+    background: var(--color-danger-soft);
+}
+
+.answer-option--disabled {
+    cursor: default;
+}

@@ -1,0 +1,20 @@
+.button {
+    padding: var(--space-3) var(--space-6);
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    color: #fff;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+}
+
+.button:disabled {
+    background: var(--color-border);
+    color: var(--color-text-muted);
+    cursor: not-allowed;
+}
